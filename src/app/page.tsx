@@ -1,10 +1,10 @@
-import {Blogs} from "../components/Blogs";
+import { BlogSection } from "../components/section/BlogSection";
 
 export default function Home() {
   return (
     <div>
       <div>Home</div>
-      <Blogs />
+      <BlogSection />
     </div>
   );
 }
