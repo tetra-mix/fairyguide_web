@@ -11,7 +11,7 @@ const KaiseiDecolFont = Kaisei_Decol({
 
 export const Header = () => {
     return (
-        <header className='w-dvw flex flex-row pl-8 pr-8 pt-2 bg-sky-100'>
+        <header className='w-dvw flex flex-row pl-8 pr-8 pt-2 bg-sky-50'>
             <div className='flex-none'>
                 <div className="order-1 grid grid-rows-2 grid-flow-col gap-4 h-28">
                     <div className="row-span-2">
@@ -20,7 +20,7 @@ export const Header = () => {
                     <div className="col-span-2">
                         <Image src={logo} alt="Logo" className='max-w-80' />
                     </div>
-                    <div className="col-span-2">
+                    <div className="col-span-2 text-lg">
                         <span className={KaiseiDecolFont.className}>
                             ~ しゃべるぬいぐるみとめぐる思い出に残る旅 ~
                         </span>
