@@ -1,8 +1,9 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
+import { compileMarkdown } from "@content-collections/markdown";
 
 const contents = defineCollection({
   name: "Contents",
-  directory: "src/app/contents",
+  directory: "src/contents",
   include: "**/*.md",
   schema: (z) => ({
     title: z.string(),
@@ -11,6 +12,13 @@ const contents = defineCollection({
     month: z.number(),
     day: z.number()
   }),
+  transform: async (document, context) => {
+    const html = await compileMarkdown(context, document);
+    return {
+      ...document,
+      html,
+    };
+  },
 });
  
 export default defineConfig({
