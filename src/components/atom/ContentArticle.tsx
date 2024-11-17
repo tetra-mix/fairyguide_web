@@ -1,10 +1,16 @@
+import { allContents } from "content-collections";
+
 type ContentArticleProps = {
-    html: string;
+    name: string;
 }
 
 export const ContentArticle = (props: ContentArticleProps) => {
 
     return (
-        <div dangerouslySetInnerHTML={{ __html: props.html }} />
+        <>
+            {allContents.map((post) => (
+                props.name === post._meta.path ? <div key={post._meta.path} dangerouslySetInnerHTML={{ __html: post.html }} /> : null
+            ))}
+        </>
     )
 }

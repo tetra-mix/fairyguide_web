@@ -5,10 +5,7 @@ import Link from "next/link";
 export const ContentCard = (props: contentCard) => {
 
     return (
-        <Link href={{
-            pathname: `/contents/${props.url}`,
-            query: { html: props.html }
-        }}>
+        <Link href={`/contents/${props.url}`}>
             <Card>
                 <CardHeader>
                     <Heading size="md">{props.title}</Heading>
