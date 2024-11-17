@@ -1,14 +1,14 @@
 import { SectionTitle } from "../atom/SectionTitle";
-import { Blogs } from "../Blogs";
+import { Contents } from "../Contents";
 
-export const BlogSection = () => {
+export const ContentSection = () => {
     return (
         <div className="p-16">
             <SectionTitle>
                 記事一覧
             </SectionTitle>
             <div className="pt-8 ">
-                <Blogs />
+                <Contents />
             </div>
         </div>
     );

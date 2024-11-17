@@ -1,8 +1,8 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
 
-const blogs = defineCollection({
-  name: "blogs",
-  directory: "src/contents",
+const contents = defineCollection({
+  name: "Contents",
+  directory: "src/app/contents",
   include: "**/*.md",
   schema: (z) => ({
     title: z.string(),
@@ -14,5 +14,5 @@ const blogs = defineCollection({
 });
  
 export default defineConfig({
-  collections: [blogs],
+  collections: [contents],
 });

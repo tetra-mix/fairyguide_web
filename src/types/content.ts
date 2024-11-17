@@ -1,11 +1,11 @@
-export type blog = {
+export type content = {
   title: string,
   summary: string,
   year: number,
   month: number,
   day: number
 }
-export type blogCard = {
+export type contentCard = {
   title: string,
   summary: string,
   year: number,

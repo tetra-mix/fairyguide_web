@@ -1,10 +1,10 @@
-import { blogCard } from "../../types/blog";
+import { contentCard } from "../../types/content";
 import { Card, CardHeader, CardBody, Heading, Text } from "@yamada-ui/react"
 import Link from "next/link";
 
-export const BlogCard = (props: blogCard) => {
+export const ContentCard = (props: contentCard) => {
     return (
-        <Link href={`/blog/${props.url}`}>
+        <Link href={`/contents/${props.url}`}>
             <Card>
                 <CardHeader>
                     <Heading size="md">{props.title}</Heading>
