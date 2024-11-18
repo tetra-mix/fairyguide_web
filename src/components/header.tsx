@@ -42,9 +42,6 @@ export const Header = () => {
                     <Button bg="primary" color="white">
                         Button
                     </Button>
-                    <Button bg="primary" color="white">
-                        Button
-                    </Button>
                 </Flex>
             </div>
         </header>
