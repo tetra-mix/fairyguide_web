@@ -5,7 +5,7 @@ import '@splidejs/splide/css';
 export const SplideSection = () => {
   //うまく実装できていない
   // スマホ・タブレット表示とPC表示で画像のサイズを変える
-  
+
   const height = () => {
     if(window.innerWidth > 768) {
       return window.innerHeight * 0.7;
@@ -27,13 +27,19 @@ export const SplideSection = () => {
       }}
     >
       <SplideSlide centeredSlides={true}>
-        <img src="./IMG_1071.png" alt="Image 1" className="bnr" />
+        <img src="./fairy_guide.webp" alt="Image 1" className="bnr" />
       </SplideSlide>
       <SplideSlide centeredSlides={true}>
-        <img src="./IMG_1844.png" alt="Image 2" className="bnr" />
+        <img src="./slide/IMG_2534.jpeg" alt="Image 2" className="bnr" />
       </SplideSlide>
       <SplideSlide centeredSlides={true}>
-        <img src="./IMG_2562.jpeg" alt="Image 3" className="bnr" />
+        <img src="./slide/IMG_2547.jpeg" alt="Image 3" className="bnr" />
+      </SplideSlide>
+      <SplideSlide centeredSlides={true}>
+        <img src="./slide/IMG_2562.jpeg" alt="Image 4" className="bnr" />
+      </SplideSlide>
+      <SplideSlide centeredSlides={true}>
+        <img src="./slide/IMG_0029.png" alt="Image 5" className="bnr" />
       </SplideSlide>
     </Splide>
   );
