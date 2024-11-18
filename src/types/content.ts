@@ -1,5 +1,4 @@
 export type content = {
-  html: string;
   summary: string;
   title: string;
   content: string;
@@ -9,7 +8,6 @@ export type content = {
 }
 
 export type contentCard = {
-  html: string;
   summary: string;
   title: string;
   content: string;

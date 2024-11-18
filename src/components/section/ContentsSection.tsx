@@ -1,6 +1,5 @@
 import { SectionTitle } from "../atom/SectionTitle";
 import { Contents } from "../Contents";
-import { Flex, Button } from "@yamada-ui/react";
 
 export const ContentSection = () => {
     return (

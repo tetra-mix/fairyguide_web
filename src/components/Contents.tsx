@@ -8,7 +8,7 @@ export const Contents = () => {
     <Grid templateColumns="repeat(4, 1fr)" gap="lg">
       {allContents.map((post) => (
           <GridItem key={post._meta.path} w="full" h="4xs" rounded="md" >
-            <ContentCard html={post.html} content={post.content} title={post.title} summary={post.summary} year={post.year} day={post.day} month={post.month} url={post._meta.path} />
+            <ContentCard content={post.content} title={post.title} summary={post.summary} year={post.year} day={post.day} month={post.month} url={post._meta.path} />
           </GridItem>
       ))}
     </Grid>
