@@ -1,6 +1,6 @@
 "use client";
 import { useParams, useSearchParams } from "next/navigation";
-import { ContentArticle } from "../../..//components/atom/ContentArticle";
+import { ContentArticle } from "../../../components/curricular/ContentArticle";
 
 
 export default function Content() {

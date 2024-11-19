@@ -1,4 +1,4 @@
-import React from 'react';
+import { Center } from '@yamada-ui/react';
 
 type SectionTitleProps = {
     children: React.ReactNode
@@ -6,6 +6,8 @@ type SectionTitleProps = {
 
 export const SectionTitle = (props: SectionTitleProps) => {
     return (
-        <h1 className="text-4xl border-l-8 border-green-600 p-4 ml-4">{props.children}</h1>
+        <Center p={8} >
+            <h1 className="text-5xl p-4 ml-4 text-center">{props.children}</h1>
+        </Center>
     )
 }

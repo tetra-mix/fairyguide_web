@@ -9,7 +9,7 @@ const NotoSansFont = Noto_Sans({
 export const FairyGuide = () => {
     return (
         <div className={NotoSansFont.className}>
-            <div className="text-4xl " >
+            <div className="text-5xl " >
                 <span className="text-red-500">F</span>
                 <span className="text-green-500">a</span>
                 <span className="text-sky-500">i</span>

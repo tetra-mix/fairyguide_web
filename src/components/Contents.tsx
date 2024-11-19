@@ -1,5 +1,5 @@
 import { allContents } from "content-collections";
-import { ContentCard } from "./atom/ContentCard";
+import { ContentCard } from "./curricular/ContentCard";
 import { Grid, GridItem } from "@yamada-ui/react"
 
 
