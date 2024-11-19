@@ -6,7 +6,7 @@ import { Grid, GridItem } from "@yamada-ui/react"
 export const Contents = () => {
   return (
     <Grid templateColumns="repeat(4, 1fr)" gap="lg">
-      {allContents.map((post) => (
+      {allContents.map((post:any) => (
           <GridItem key={post._meta.path} w="full" h="4xs" rounded="md" >
             <ContentCard content={post.content} title={post.title} summary={post.summary} year={post.year} day={post.day} month={post.month} url={post._meta.path} />
           </GridItem>

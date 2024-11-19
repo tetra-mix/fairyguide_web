@@ -12,7 +12,7 @@ export const ContentArticle = (props: ContentArticleProps) => {
 
     return (
         <>
-            {allContents.map((post) => (
+            {allContents.map((post:any) => (
                 props.name === post._meta.path ? <ReactMarkdown className="parse" remarkPlugins={[remarkGfm]} key={post._meta.path}>{post.content}</ReactMarkdown> : null
             ))}
             <Flex justifyContent="center" gap="8">
