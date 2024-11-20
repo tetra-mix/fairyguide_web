@@ -1,5 +1,4 @@
 "use client";
-import '@splidejs/splide/css';
 import { Carousel, CarouselSlide } from "@yamada-ui/carousel";
 import { Image } from "@yamada-ui/react";
 export const SplideSection = () => {
@@ -7,30 +6,26 @@ export const SplideSection = () => {
   // スマホ・タブレット表示とPC表示で画像のサイズを変える
 
   const height = () => {
-    if (window.innerWidth > 768) {
       return window.innerHeight * 0.75;
-    } else {
-      return window.innerHeight * 0.35;
-    }
   }
 
   return (
     <>
       <Carousel h={height()} w={"full"}>
         <CarouselSlide>
-          <Image src="./fairy_guide.webp" alt="Image 1" objectFit={"cover"} objectPosition={"0% 70%"} h={"80vh"} w="full" />
+          <Image src="./fairy_guide.webp" alt="Image 1" objectFit={"cover"} objectPosition={"80% 70%"} h={"80vh"} w="full" />
         </CarouselSlide>
         <CarouselSlide>
-          <Image src="./slide/IMG_2534.jpeg" alt="Image 1" objectFit={"cover"} objectPosition={"0% 70%"} h={"80vh"} w="full" />
+          <Image src="./slide/IMG_2534.jpeg" alt="Image 1" objectFit={"cover"} objectPosition={"30% 70%"} h={"80vh"} w="full" />
         </CarouselSlide>
         <CarouselSlide>
-          <Image src="./slide/IMG_2547.jpeg" alt="Image 1" objectFit={"cover"} objectPosition={"0% 70%"} h={"80vh"} w="full" />
+          <Image src="./slide/IMG_2547.jpeg" alt="Image 1" objectFit={"cover"} objectPosition={"80% 70%"} h={"80vh"} w="full" />
         </CarouselSlide>
         <CarouselSlide>
-          <Image src="./slide/IMG_2562.jpeg" alt="Image 1" objectFit={"cover"} objectPosition={"0% 75%"} h={"80vh"} w="full" />
+          <Image src="./slide/IMG_2562.jpeg" alt="Image 1" objectFit={"cover"} objectPosition={"50% 75%"} h={"80vh"} w="full" />
         </CarouselSlide>
         <CarouselSlide>
-          <Image src="./slide/IMG_0029.png" alt="Image 1" objectFit={"cover"} objectPosition={"0% 30%"} h={"80vh"} w="full" />
+          <Image src="./slide/IMG_0029.png" alt="Image 1" objectFit={"cover"} objectPosition={"30% 30%"} h={"80vh"} w="full" />
         </CarouselSlide>
       </Carousel>
     </>
