@@ -1,15 +1,16 @@
 import { SectionTitle } from "../atom/SectionTitle";
 import { Contents } from "../Contents";
+import { Container, Box } from "@yamada-ui/react";
 
 export const ContentSection = () => {
     return (
-        <div className="p-16">
+        <Container p={16}>
             <SectionTitle>
                 記事一覧
             </SectionTitle>
-            <div className="pt-8 ">
+            <Box pt={8}>
                 <Contents />
-            </div>
-        </div>
+            </Box>
+        </Container>
     );
 }

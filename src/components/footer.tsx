@@ -1,7 +1,11 @@
+import { Box, Text } from "@yamada-ui/react";
+
 export const Footer = () => {
     return (
         <footer>
-            <div className="w-dvw bg-sky-50S">FairyGuide © 2024 Ryoma Yoshitaka</div>
+            <Box w={"full"} bg={"blackAlpha.400"}>
+                <Text>FairyGuide © 2024 Ryoma Yoshitaka</Text>
+            </Box>
         </footer>
     );
 }

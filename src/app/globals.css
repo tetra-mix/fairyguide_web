@@ -92,14 +92,3 @@
     background-color: rgb(20, 20, 20);
     border-radius: 20px;
   }
-  
-
- @media (min-width: 768px){
-
-    .bnr{
-        height: 80vh;
-        width: 100vw;
-        object-fit: cover;
-        object-position: center;
-    }
-  }
