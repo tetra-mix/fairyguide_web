@@ -9,7 +9,7 @@ export const Header = () => {
                     Button
                 </IconButton>
             </Box>
-            <Box w={"100vw"}>
+            <Box w={"100%"}>
                 <Center>
                     <FairyGuideIconLogo />
                 </Center>

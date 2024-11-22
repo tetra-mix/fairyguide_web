@@ -8,7 +8,7 @@ type RoleCardProps = {
 
 export const RoleCard = (props: RoleCardProps) => {
     return (
-        <Card maxW="md">
+        <Card maxW="sm" h="450px">
             <CardHeader justifyContent="center">
                 <Image
                     src={props.image}

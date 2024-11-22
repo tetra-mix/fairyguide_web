@@ -1,16 +1,15 @@
 import { allContents } from "content-collections";
 import { ContentCard } from "./curricular/ContentCard";
-import { Grid, GridItem } from "@yamada-ui/react"
+import { Flex, Grid, GridItem } from "@yamada-ui/react"
 
 
 export const Contents = () => {
   return (
-    <Grid templateColumns="repeat(4, 1fr)" gap="lg">
+    
+    <Flex w="full" h="800" flexFlow={{base: "row wrap", sm: "column wrap"}} justifyContent={"center"} gap={{base: 8, sm: 2}}>
       {allContents.map((post:any) => (
-          <GridItem key={post._meta.path} w="full" h="4xs" rounded="md" >
             <ContentCard content={post.content} title={post.title} summary={post.summary} year={post.year} day={post.day} month={post.month} url={post._meta.path} />
-          </GridItem>
       ))}
-    </Grid>
+    </Flex>
   );
 }

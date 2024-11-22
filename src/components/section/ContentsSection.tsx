@@ -1,16 +1,18 @@
 import { SectionTitle } from "../atom/SectionTitle";
 import { Contents } from "../Contents";
-import { Container, Box } from "@yamada-ui/react";
+import { Container, Center,Box} from "@yamada-ui/react";
 
 export const ContentSection = () => {
     return (
-        <Container p={16}>
+        <Container p={{base:8, sm:4}}>
             <SectionTitle>
                 記事一覧
             </SectionTitle>
-            <Box pt={8}>
-                <Contents />
-            </Box>
+            <Center>
+                <Box ml={{base: 8, sm:0}} mr={{base: 8, sm:0}}>
+                    <Contents />
+                </Box>
+            </Center>
         </Container>
     );
 }

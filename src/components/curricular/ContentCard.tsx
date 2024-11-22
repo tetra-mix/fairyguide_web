@@ -6,7 +6,7 @@ export const ContentCard = (props: contentCard) => {
 
     return (
         <Link href={`/contents/${props.url}`}>
-            <Card>
+            <Card w="320">
                 <CardHeader>
                     <Heading size="md">{props.title}</Heading>
                 </CardHeader>

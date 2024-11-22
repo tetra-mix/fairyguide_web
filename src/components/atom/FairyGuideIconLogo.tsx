@@ -9,7 +9,7 @@ const KaiseiDecolFont = Kaisei_Decol({
 export const FairyGuideIconLogo = () => {
 
     return (
-        <SimpleGrid columns={1} row={2} gap={"sm"} w={{base: 480, sm: 350}} >
+        <SimpleGrid columns={1} row={2} gap={"sm"} w={{base: 480, sm: 335}} >
             <GridItem>
                 <Flex gap={"md"} >
                     <Box >

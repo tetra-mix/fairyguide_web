@@ -6,7 +6,7 @@ type SectionTitleProps = {
 
 export const SectionTitle = (props: SectionTitleProps) => {
     return (
-        <Center p={8} >
+        <Center pt={8} pb={8} >
             <Heading as={"h1"} text={"5xl"} p={4} textAlign={"center"} >{props.children}</Heading>
         </Center>
     )
