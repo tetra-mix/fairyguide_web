@@ -6,7 +6,7 @@ import { Container, Flex, } from "@yamada-ui/react";
 
 export const RoleSection = () => {
     return (
-        <Container p={{ base: 8, sm: 2 }}>
+        <Container p={{ base: 8, sm: 2 }} id="role">
             <SectionTitle>
                 FairyGuideの役割
             </SectionTitle>

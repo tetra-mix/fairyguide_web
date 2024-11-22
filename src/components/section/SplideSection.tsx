@@ -6,7 +6,7 @@ export const SplideSection = () => {
   // スマホ・タブレット表示とPC表示で画像のサイズを変える
   return (
     <>
-      <Carousel h={"80vh"} w={"full"}>
+      <Carousel h={"80vh"} w={"full"} id="top">
         <CarouselSlide>
           <Image src="./slide/IMG_2374.JPG" alt="Image 1" objectFit={"cover"} objectPosition={"80% 70%"} h={"80vh"} w="full" />
         </CarouselSlide>

@@ -4,7 +4,7 @@ import { Center } from "@yamada-ui/react";
 import { Container, Box, Text, Image } from "@yamada-ui/react";
 export const WhatSection = () => {
     return (
-        <Container p={{base:8,sm:2}}>
+        <Container p={{base:8,sm:2}} id="what">
             <SectionTitle>
                 FairyGuideとは
             </SectionTitle>
