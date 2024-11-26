@@ -2,12 +2,13 @@
   "name": "fairyguide_web",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ./src/**/*.{ts,tsx,js,jsx,json,md}"
+    "format": "prettier --write ./src/**/*.{ts,tsx,md}"
   },
   "dependencies": {
     "@yamada-ui/carousel": "^2.1.4",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@content-collections/core": "^0.7.3",
     "@content-collections/next": "^0.2.3",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -30,6 +32,7 @@
     "eslint-config-next": "15.0.2",
     "postcss": "^8",
     "prettier": "^3.4.1",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

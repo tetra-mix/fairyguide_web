@@ -6,7 +6,7 @@ export type content = {
   month: number;
   day: number;
   image: string;
-}
+};
 
 export type contentCard = {
   summary: string;
@@ -17,5 +17,4 @@ export type contentCard = {
   day: number;
   image: string;
   url: string;
-}
-
+};

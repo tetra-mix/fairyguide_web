@@ -1,7 +1,9 @@
 import "./globals.css";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
+
 import { UIProvider } from "@yamada-ui/react";
+
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 
 export default function RootLayout({
   children,
