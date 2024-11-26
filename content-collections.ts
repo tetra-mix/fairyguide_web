@@ -10,7 +10,13 @@ const contents = defineCollection({
     year: z.number(),
     month: z.number(),
     day: z.number()
-  })
+  }),
+  transform: (doc) => {
+    return {
+      ...doc,
+      image: `./Article/${doc._meta.path}.jpg`,
+    };
+  },
 });
  
 export default defineConfig({

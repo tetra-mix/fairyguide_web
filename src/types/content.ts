@@ -5,6 +5,7 @@ export type content = {
   year: number;
   month: number;
   day: number;
+  image: string;
 }
 
 export type contentCard = {
@@ -14,6 +15,7 @@ export type contentCard = {
   year: number;
   month: number;
   day: number;
+  image: string;
   url: string;
 }
 
