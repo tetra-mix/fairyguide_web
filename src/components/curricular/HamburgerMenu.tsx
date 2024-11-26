@@ -1,20 +1,40 @@
 "use client";
 
-import { Box, IconButton, Button, Drawer, DrawerBody, DrawerFooter, DrawerHeader, useDisclosure } from '@yamada-ui/react'
+import {
+  Box,
+  IconButton,
+  Button,
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  useDisclosure,
+} from "@yamada-ui/react";
 import { CiMenuBurger } from "react-icons/ci";
-import { LinkData } from './LinkData';
+import { LinkData } from "./LinkData";
 
 export const HamburgerMenu = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Box position={{ base: "absolute", md: "static" }}>
-        <IconButton onClick={onOpen} colorScheme="secondary" variant="outline" size={"2xl"} icon={<CiMenuBurger />}>
+        <IconButton
+          onClick={onOpen}
+          colorScheme="secondary"
+          variant="outline"
+          size={"2xl"}
+          icon={<CiMenuBurger />}
+        >
           Button
         </IconButton>
       </Box>
 
-      <Drawer isOpen={isOpen} onClose={onClose} placement={"left"} size={{base:"md", sm:"xs"}}>
+      <Drawer
+        isOpen={isOpen}
+        onClose={onClose}
+        placement={"left"}
+        size={{ base: "md", sm: "xs" }}
+      >
         <DrawerHeader>FiaryGuide.dev</DrawerHeader>
 
         <DrawerBody>
@@ -31,5 +51,5 @@ export const HamburgerMenu = () => {
         </DrawerFooter>
       </Drawer>
     </>
-  )
-}
+  );
+};

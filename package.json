@@ -8,11 +8,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ./src/**/*.{ts,tsx,md}"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{md,ts,tsx,css}' --plugin=prettier-plugin-tailwindcss"
   },
   "dependencies": {
     "@yamada-ui/carousel": "^2.1.4",
     "@yamada-ui/react": "^1.6.2",
+    "eslint-config-prettier": "^9.1.0",
     "google": "link:next/font/google",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",

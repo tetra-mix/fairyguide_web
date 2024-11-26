@@ -9,7 +9,7 @@ const contents = defineCollection({
     summary: z.string(),
     year: z.number(),
     month: z.number(),
-    day: z.number()
+    day: z.number(),
   }),
   transform: (doc) => {
     return {
@@ -18,7 +18,7 @@ const contents = defineCollection({
     };
   },
 });
- 
+
 export default defineConfig({
   collections: [contents],
 });
