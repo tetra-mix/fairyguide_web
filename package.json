@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write --ignore-path .gitignore './**/*.{md,ts,tsx,css}' --plugin=prettier-plugin-tailwindcss",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@yamada-ui/carousel": "^2.1.4",
@@ -41,9 +42,9 @@
     "typescript": "^5"
   },
   "lint-staged": {
-      "*.{ts,tsx}": [
-        "pnpm lint",
-        "pnpm format"
-      ]
-    }
+    "*.{ts,tsx}": [
+      "pnpm lint",
+      "pnpm format"
+    ]
+  }
 }
