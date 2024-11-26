@@ -8,13 +8,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{md,ts,tsx,css}' --plugin=prettier-plugin-tailwindcss"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{md,ts,tsx,css}' --plugin=prettier-plugin-tailwindcss",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@yamada-ui/carousel": "^2.1.4",
     "@yamada-ui/react": "^1.6.2",
     "eslint-config-prettier": "^9.1.0",
     "google": "link:next/font/google",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
@@ -36,5 +39,11 @@
     "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "lint-staged": {
+      "*.{ts,tsx}": [
+        "pnpm lint",
+        "pnpm format"
+      ]
+    }
 }
